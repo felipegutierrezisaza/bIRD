@@ -1,0 +1,12 @@
+{
+  "name": "Nidal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+
+  "proxies": [{
+    "path": "/goto",
+    "proxyUrl": "http://192.168.9.71:8000/recognotion/"
+  }]
+}

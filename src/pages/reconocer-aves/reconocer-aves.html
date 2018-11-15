@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Reconocer Aves
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page3">
+
+
+
+    <button id="reconocerAves-button4" ion-button color="danger" block large icon-left style="border-radius:30px 30px 30px 30px;" (click)="stopRecord()" *ngIf="recording">
+      <ion-icon name="mic-off"></ion-icon>&nbsp;&nbsp;Parar</button>
+    <button id="reconocerAves-button4" ion-button color="primary" block large icon-left style="border-radius:30px 30px 30px 30px;" (click)="startRecord()" *ngIf="!recording">
+      <ion-icon name="mic"></ion-icon>&nbsp;&nbsp;Grabar Ave</button>
+      
+    <ion-list>
+      <ion-item *ngFor="let audio of audioList; index as i;">
+        <p>{{audio.filename}}</p>
+        <button ion-button clear item-end large (click)="playAudio(audio.filename, i)"><ion-icon name="play"></ion-icon></button>
+      </ion-item>
+    </ion-list>
+   <b></b>
+    <button id="reconocerAves-button6" ion-button color="primary" block large icon-left style="border-radius:30px 30px 30px 30px;" (click)="uploadsound()">
+        <ion-icon name="send"></ion-icon>
+        Reconocer Ave
+      </button>
+    <ion-row>
+      <li *ngFor="let valor of result.lista; let i=index">
+      {{valor[0]}} - {{valor[1]}}
+      </li>
+   <!--{{result.lista}}-->   
+    </ion-row>
+  </ion-content>
+
+
