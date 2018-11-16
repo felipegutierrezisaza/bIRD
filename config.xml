@@ -86,4 +86,6 @@
     <plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
     <plugin name="cordova-plugin-nativeaudio" spec="3.0.9" />
     <plugin name="cordova-plugin-media" spec="5.0.2" />
+    <engine name="ios" spec="4.5.5" />
+    <engine name="android" spec="7.1.2" />
 </widget>

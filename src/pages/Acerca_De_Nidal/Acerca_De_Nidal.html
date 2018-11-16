@@ -1,0 +1,452 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Acerca De Nidal
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page26">
+  <div id="acercaDeNidal-markdown27" class="show-list-numbers-and-dots">
+    <h1>
+      ¿Qué es Nidal?
+    </h1>
+    <p style="color:#000000;">
+      Nidal es una herramienta de reconocimiento de aves, la herramienta está incorporada dentro de una aplicación, dicha aplicación se desarrolló con el Framework
+      <a href="https://ionicframework.com/docs/intro/concepts/">
+        Ionic 3
+      </a>
+      , el aplicativo ofrece 2 funcionalidades:
+    </p>
+    <ul>
+      <li>
+        Enciclopedia de aves
+      </li>
+      <li>
+        Sistema de reconocimiento a traves de su canto
+      </li>
+    </ul>
+    <p style="color:#000000;">
+      El proyecto que relaciona al aplicativo surge en la Universidad Tecnológica de Pereira, por el grupo de avanzada en desarrollo de software
+      <a href="https://www.utp.edu.co/vicerrectoria/investigaciones/investigaciones/integrantes/211/rec">
+        GRANDE
+      </a>
+      , donde se observó la necesidad que habia para reconocer aves, se enfocó para reconocerse con audio, la idea maduró y con esta se participó en la convocatoria de
+      <a href="https://comunicaciones.utp.edu.co/noticias/35125/convocatoria-de-colciencias-no-781-2017-para-el-reconocimiento-y-medicion-de-grupos-de-investigacion">
+        Colciencias #781-2017
+      </a>
+      para el reconocimiento y medición de grupos de investigación , cumpliendo sus debidos requerimientos fue aprobado, asi dando inicio al desarrollo del proyecto.
+    </p>
+    <p style="color:#000000;">
+      El objetivo de este aplicativo es de motivar, impulsar, apoyar a la actividad de avistamiento de aves en el
+      <a href="https://www.utp.edu.co/jardin/historia.html">
+        Jardín Botanico de la Universidad Tecnológica de Pereira
+      </a>
+      , es decir que el aplicativo sea un atractivo y un plus para dicha actividad, el aplicativo en el momento solo es una versión de lanzamiento (una primera versión, beta), es decir que está sujeto al desarrollo de nuevas versiones, a continuación se explica
+      como funciona lo que ofrece el aplicativo y se indica las fuentes requeridas para obtener la información.
+    </p>
+    <h2>
+      Enciclopedia de aves:
+    </h2>
+    <p style="color:#000000;">
+      Sistema de información, donde se encuentra almacenado datos basicos de las aves, necesario para las actividades de avistamiento de aves, ya que es un apoyo para comparar y conocer lo que se está visualizando. Los datos que contiene el aplicativo debía
+      de buscarse en diferentes sitios, debido a que no se tenia el tiempo para obtener datos por si mismos de las aves, para alimentar este sistema de información, fueron extraidos de:
+    </p>
+    <ul>
+      <li>
+        <a href="http://siatac.siac.net.co/">
+          SIATAC
+        </a>
+      </li>
+      <li>
+        <a href="http://www.icesi.edu.co/wiki_aves_colombia/tiki-index.php?page=Introduccion">
+          Universidad ICES
+        </a>
+      </li>
+      <li>
+        <a href="https://avibase.bsc-eoc.org/">
+          Avibase, The World Bird Database
+        </a>
+      </li>
+      <li>
+        <a href="https://avescolombia.org/acerca-de/">
+          Birds Colombia
+        </a>
+      </li>
+      <li>
+        <a href="https://www.hbw.com/about-us">
+          Handbook of the Birds of the World
+        </a>
+      </li>
+      <li>
+        <a href="https://www.hbw.com/ibc/about-the-internet-bird-collection-ibc">
+          The internet IBC Bird Collection
+        </a>
+      </li>
+      <li>
+        <a href="https://ebird.org/about">
+          eBird
+        </a>
+      </li>
+      <li>
+        <a href="https://neotropical.birds.cornell.edu/Species-Account/nb/support/welcome">
+          The Cornell Lab of Ornithology Neotropical Birds
+        </a>
+      </li>
+    </ul>
+    <p style="color:#000000;">
+      Muchos de estos sitios han realizado la labor de tomar información de libros y otras bases de datos de aves y donde han tratado (depurado) la información de las diferentes fuentes, lo que contiene el aplicativo viene a ser solo algunos datos básicos (que
+      se consideraron básicos a la hora de avistar aves).
+    </p>
+    <p style="color:#000000;">
+      El desarrollador principal del aplicativo móvil Felipe Gutierrez Isaza, fue el encargado de tomar detas diferentes web&#39;s los datos que se querian mostrar de cada ave, junto con la ayuda y aprobación del especialista en reconocimiento de aves Jaime
+      Suarez, se colocó parte de la información de las aves, que ya tenia el Jardín Botanico de la Universidad Tecnologica.
+    </p>
+    <h2>
+      Sistema de reconocimiento:
+    </h2>
+    <p style="color:#000000;">
+      Es un servcio montado en una maquina externa (tipo servidor), el cual mantiene recibiendo archivos de audio, los audios que recibe los procesa conviertiendolo en el formato requerido, luego el algoritmo hace su debido proceso y entrega los resultados
+      (indica que ave puede ser con sus debidos porcentajes). El algoritmo de reconocimiento fue desarrollado en base al algoritmo Dejavu, el cual se tomó y se modifico por el desarrollador principal del servicio externo Carlos Arturo Moreno Tabares.
+      El algoritmo Dejavu fue desarrollado por varias personas que fueron contribullendo a lo que realizaba el autor principal, todos los implicados para ese desarrollo (a excepción del que elaboró lo requerido para este proyecto) son:
+    </p>
+    <h3>
+      Autor principal de Dejavu:
+    </h3>
+    <ul>
+      <li>
+        <a href="http://willdrevo.com/about/">
+          Will Drevo
+        </a>
+      </li>
+    </ul>
+    <h3>
+      Contribuidores:
+    </h3>
+    <ul>
+      <li>
+        <a href="https://github.com/Wessie">
+          Wesley Bitter
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Bevinsky">
+          Bevin Hansson
+        </a>
+      </li>
+      <li>
+        <a href="http://tuxdna.in/">
+          Saleem Ansari
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/fbrcosta">
+          Fabio Costa
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/pguridi">
+          Pedro Guridi
+        </a>
+      </li>
+      <li>
+        <a href="http://uk.linkedin.com/in/sebastiangrubb">
+          Sebastian
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/suxianbaozi">
+          Wang Qiushi
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/bhuvi8">
+          bhuvi
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/tjj5036">
+          Tyler Jones
+        </a>
+      </li>
+      <li>
+        <a href="http://iskren.stanislavov.free.bg/">
+          Iskren Stanislavov
+        </a>
+      </li>
+      <li>
+        <a href="https://duberste.in/">
+          Andrew Duberstein
+        </a>
+      </li>
+      <li>
+        <a href="https://compwright.com/">
+          Jonathon Hill
+        </a>
+      </li>
+    </ul>
+    <p style="color:#000000;">
+      Para poner a prueba el sistema de reconocimiento se necesitó de los cantos de unas aves, estos cantos se les dió un tratamiento previo (cambiando tras cada una de las pruebas en el avance del desarrollo), estos cantos todos fueron tomados de
+      <a href="https://www.xeno-canto.org/about/xeno-canto">
+        Xeno canto
+      </a>
+      los autores de esos cantos, que se usaron para el entrenamiento y pruebas del sistema (tambien para mostrarlos en la enciclopedia de aves del aplicativo) fueron:
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/NNHLQJVOUP">
+          Jaime Suárez (Especialista en reconocimiento de aves contribuyente al proyecto)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/OOECIWCSWV">
+          Peter Boesman
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/XTVEPHMPPJ">
+          Niels Krabbe
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/CJQNNUYOQE">
+          Andres Angulo
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/UOMSQHKZSS">
+          Hotel Tinamu
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/CSUHASNRSU">
+          Oscar Humberto Marín Gómez
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/YTUXOCTUEM">
+          Frank Lambert
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/CDTGHVBGZP">
+          Andrew Spencer
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/BYLLSJRVDZ">
+          Bernabe Lopez-Lanus
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/OWZTPLFLJS">
+          Mitch Lysinger
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/JPBSNBUUEF">
+          Jerome Fischer
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/NBJQSQJRYH">
+          Antonio Silveira
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/CJXFUTDBXV">
+          David Bradley
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/RCJCABZSNP">
+          Miguel Castelino
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/DTKJSKMKZD">
+          Juan Sebastian Ulloa
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/UQUOPFIYYQ">
+          Yair Guillermo Molina Martínez
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/XMFDPACYJN">
+          Colección de Sonidos Ambientales-Instituto Humboldt, Colombia
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/ILYXGBTTTV">
+          Jean-Esteban Liberek
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/OGATBVKNAG">
+          Diego Calderon-F.
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/PGKRDJHPNA">
+          Fernanda Garcia
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/FNIOJOZADD">
+          Ross Gallardy
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/DGVLLRYDXS">
+          Jeremy Minns
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/PWMAZXONXH">
+          Ottavio Janni
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/SNUDCZVUQK">
+          Herman van Oosten
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/DABODLPUPA">
+          Scott Olmstead
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/MAVGCHPXII">
+          David Monroy Rengifo
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/TNPOVFLZMY">
+          Joe Klaiber
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/GTTLRDCZWR">
+          Jonas Nilsson
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/YHKQPPJDVP">
+          Bobby Wilcox
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/LLRXADGTBA">
+          Paul Donahue
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/LWUNWNGTQN">
+          Patrice Adret
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/GPVWJPVGVN">
+          A. Bennett Hennessey
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/RHBDULYFAE">
+          Juan Sebastian Arango Gonzalez
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/UAYUTDXXII">
+          Juan Pablo López-O
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/XKJTIUSQNM">
+          Johan Chaves
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/BSSDZACLHP">
+          Myriam Velazquez
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/WOEAFQRMUD">
+          Daniel Lane
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/VVDRVZCVWW">
+          Oswaldo Cortes
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/KGOCOOKTTU">
+          Thomas G. Graves
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/WWJLCULTPC">
+          Brayan Coral Jaramillo
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/YKKDTZHLUU">
+          John V. Moore
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/EMCWQLLKEW">
+          Marcelo Araya-Salas
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/FPAGKPAQYO">
+          Fabrice Schmitt
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/ODAYZINCOA">
+          Nick Komar
+        </a>
+      </li>
+      <li>
+        <a href="https://www.xeno-canto.org/contributor/ZSRMEGHRJP">
+          Andrea Lopera-Salazar
+        </a>
+      </li>
+    </ul>
+  </div>
+  <h4 id="acercaDeNidal-heading22" style="color:#000000;text-align:center;">
+    Desarrollador Principal Del Servicio Externo
+  </h4>
+  <ion-list id="acercaDeNidal-list4">
+    <ion-item color="none" href="mailto:calox216@gmail.com" id="acercaDeNidal-list-item35">
+      <ion-avatar item-left>
+        <img src="assets/img/1NwHSTU0R0mxImbm7Gkw_cabezonmoreno.jpg" />
+      </ion-avatar>
+      <h2>
+        Carlos Arturo Moreno Tabares
+      </h2>
+    </ion-item>
+  </ion-list>
+  <h4 id="acercaDeNidal-heading25" style="color:#000000;text-align:center;">
+    Desarrollador Principal De La app IOS-Android
+  </h4>
+  <ion-list id="acercaDeNidal-list5">
+    <ion-item color="none" href="mailto:pipmelo@gmail.com" id="acercaDeNidal-list-item33">
+      <ion-avatar item-left>
+        <img src="assets/img/dqEP875TDaLVwphCHsAr_foto.PNG" />
+      </ion-avatar>
+      <h2>
+        Felipe Gutiérrez Isaza
+      </h2>
+    </ion-item>
+  </ion-list>
+  <div class="spacer" style="height:20px;" id="acercaDeNidal-spacer1"></div>
+</ion-content>

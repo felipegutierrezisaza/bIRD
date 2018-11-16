@@ -31,7 +31,7 @@ import { ThamnophilusAtrinuchaPage } from '../pages/thamnophilus-atrinucha/thamn
 import { TurdusIgnobilisPage } from '../pages/turdus-ignobilis/turdus-ignobilis';
 import { VanellusChilensisPage } from '../pages/vanellus-chilensis/vanellus-chilensis';
 import { XiphorhynchusSusurransPage } from '../pages/xiphorhynchus-susurrans/xiphorhynchus-susurrans';
-
+import { AcercaDeNidalPage } from '../pages/Acerca_De_Nidal/Acerca_De_Nidal';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -69,7 +69,8 @@ import { NativeAudio } from '@ionic-native/native-audio';
     ThamnophilusAtrinuchaPage,
     TurdusIgnobilisPage,
     VanellusChilensisPage,
-    XiphorhynchusSusurransPage
+    XiphorhynchusSusurransPage,
+    AcercaDeNidalPage
   ],
   imports: [
     BrowserModule,
@@ -104,7 +105,8 @@ MyApp,
     ThamnophilusAtrinuchaPage,
     TurdusIgnobilisPage,
     VanellusChilensisPage,
-    XiphorhynchusSusurransPage
+    XiphorhynchusSusurransPage,
+    AcercaDeNidalPage
   ],
   providers: [
     StatusBar,

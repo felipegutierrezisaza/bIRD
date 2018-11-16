@@ -24,6 +24,8 @@ import { ThamnophilusMultistriatusPage } from '../thamnophilus-multistriatus/tha
 import { TurdusIgnobilisPage } from '../turdus-ignobilis/turdus-ignobilis';
 import { VanellusChilensisPage } from '../vanellus-chilensis/vanellus-chilensis';
 import { XiphorhynchusSusurransPage } from '../xiphorhynchus-susurrans/xiphorhynchus-susurrans';
+
+import { AcercaDeNidalPage } from '../Acerca_De_Nidal/Acerca_De_Nidal';
 import { ReconocerAvesPage } from '../reconocer-aves/reconocer-aves';
 
 @Component({
@@ -100,12 +102,15 @@ export class NidalPage {
   }goToTurdusIgnobilis(params){
     if (!params) params = {};
     this.navCtrl.push(TurdusIgnobilisPage);
-  }goToVanellusChilensis(params){
+  }goToVanellusChilensis(params){ 
     if (!params) params = {};
     this.navCtrl.push(VanellusChilensisPage);
   }goToXiphorhynchusSusurrans(params){
     if (!params) params = {};
     this.navCtrl.push(XiphorhynchusSusurransPage);
+  }goToAcercaDeNidal(params){
+    if (!params) params = {};
+    this.navCtrl.push(AcercaDeNidalPage);
   }goToReconocerAves(params){
     if (!params) params = {};
     this.navCtrl.push(ReconocerAvesPage);

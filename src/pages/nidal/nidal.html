@@ -1,11 +1,15 @@
 <ion-content padding id="page1">
   <img src="assets/img/GTxaN5ixS7aPMXSe1z5p_15286-NQ2XO2.jpg" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
-  <button id="nidal-button2" ion-button color="positive" block large icon-left style="text-align:right;" on-click="goToBibliotecaAves()">
+  <button id="nidal-button2" ion-button color="secondary" block large icon-left style="text-align:right;" on-click="goToBibliotecaAves()">
     <ion-icon name="images"></ion-icon>
-    Biblioteca Aves
+    Enciclopedia Aves UTP
   </button>
   <button id="nidal-button3" ion-button color="positive" block large icon-left style="text-align:right;" on-click="goToReconocerAves()">
     <ion-icon name="recording"></ion-icon>
     Reconocer Aves
+  </button>
+  <button id="nidal-button4" ion-button [color]="primary" block large icon-left style="text-align:right;" on-click="goToAcercaDeNidal()" [clear]="isClear" >
+    <ion-icon name="quote"></ion-icon>
+      Acerca De Nidal
   </button>
 </ion-content>
